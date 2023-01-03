@@ -154,7 +154,7 @@ func convertInt(arguments []string, isRoman bool) (argumentsInt []int, err error
 		temporalArgument, err := strconv.Atoi(arguments[i])
 
 		if err != nil {
-			err = errors.New("один или оба из аргументов не является числом")
+			err = errors.New("один или оба из аргументов не являются числомами, с которыми возможна операция")
 			return argumentsInt, err
 		}
 
